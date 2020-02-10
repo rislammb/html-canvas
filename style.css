@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+p {
+  align-self: flex-end;
+}
+p a {
+  padding: 3px 15px;
+  color: rgb(142, 226, 247);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#canvas {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  width: 340px;
+  height: 340px;
+}
+#source {
+  display: none;
+}
+@media screen and (min-width: 500px) {
+  #canvas {
+    width: 480px;
+    height: 480px;
+  }
+}
+@media screen and (min-width: 650px) {
+  #canvas {
+    width: 600px;
+    height: 600px;
+  }
+}
